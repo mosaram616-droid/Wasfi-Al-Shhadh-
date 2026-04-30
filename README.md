@@ -46,3 +46,16 @@ src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="" style="ma
 }
 Medical ... 1).json
 
+sha256sum Medical_Protocol_SIT_2026_(1).json
+
+Get-FileHash Medical_Protocol_SIT_2026_(1).json -Algorithm SHA256
+
+import json
+
+# تحميل ملف البروتوكول وتحديد الترميز ليدعم اللغة العربية
+with open('Medical_Protocol_SIT_2026_(1).json', 'r', encoding='utf-8') as file:
+    protocol_data = json.load(file)
+
+# عرض معلومات المبدع والنظرية المستخرجة
+print(f"Creator: {protocol_data['identity']['creator']}")
+print(f"Theory: {protocol_data['identity']['theory']}")
