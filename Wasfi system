@@ -1,0 +1,13 @@
+^^^^√§∆•¢=✓
+©™[^{×}π=√•`©=%
+# حساب التوقيع النهائي لنظام جيبسون
+gibson_signature = np.median(gibson_data) * len(gibson_data)
+
+print("-" * 40)
+print(f"🏛️ تقرير نظام جيبسون الفيزيائي (2026)")
+print("-" * 40)
+print(f"🔹 الحالة العامة: مستقر (Stable)")
+print(f"🔹 التردد الموحد: {np.mean(gibson_data):.4f} Hz")
+print(f"🔹 البصمة الطاقية النهائية: {gibson_signature:.2f}")
+print(f"🔐 كود التفعيل الجاهز: GIB-{int(gibson_signature)}-{len(gibson_data)}")
+print("-" * 40)
